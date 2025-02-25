@@ -2,4 +2,4 @@ Flask==3.0.3
 transformers==4.49.0
 requests==2.32.3
 tensorflow==2.16.1
-tf-keras==0.3.1
+tf-keras==2.14.1
