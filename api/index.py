@@ -15,7 +15,7 @@ def test_api():
 @app.route('/api/transcript/<video_id>', methods=['GET'])
 def get_transcript(video_id):
     try:
-        transcript = YouTubeTranscriptApi.get_transcript(video_id)
+        transcript = YouTubeTranscriptApi.get_transcript(video_id, cookies="cookies.txt")
         return jsonify({
             "success": True,
             "transcript": transcript
